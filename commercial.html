@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commercial Services — Pier 60 USA · Facility Maintenance, HVAC, Electrical, Plumbing &amp; Renovation</title>
+  <meta name="description" content="Full-stack commercial facility services for property managers across Texas: maintenance, HVAC, electrical, plumbing, project management, and renovation. One call, one vendor, one invoice.">
+  <link rel="stylesheet" href="styles_v2.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero-inner has-media has-video" data-screen-label="01 Commercial hero" style="background:#0B2545 url('assets/hero-commercial-poster.jpg') center/cover no-repeat;">
+  <video class="hero-media" autoplay muted loop playsinline preload="auto"
+         poster="assets/hero-commercial-poster.jpg" aria-hidden="true" tabindex="-1">
+    <source src="assets/hero-commercial.mp4" type="video/mp4">
+  </video>
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-pill">
+      <div class="nav-left">
+        <a href="index.html" class="logo" aria-label="Pier 60 USA — Home"><img src="assets/logo-navy.svg" alt="Pier 60"></a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="commercial.html" class="active">Commercial</a>
+          <a href="residential.html">Residential</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <div class="nav-meta">
+          <span class="availability">Booking work for Q1 2026</span>
+          <span class="clock">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span class="clock-time">--:--</span> in Dallas
+          </span>
+        </div>
+        <a href="contact.html" class="btn-pill">
+          <span class="label"><span>Request a quote</span><span>Request a quote</span></span>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </a>
+      </div>
+      <button class="menu-btn" id="menu-open" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="hero-inner-content">
+    <div class="badge-row">
+      <span class="badge-num">·</span>
+      <span class="badge-pill">Commercial services</span>
+    </div>
+    <h1>Everything your building needs, run by one team.</h1>
+    <p class="lede">Pier 60 USA is the in-house facility partner for restaurants, multi-family operators, retail portfolios, healthcare offices, and entertainment venues across Texas. Routine maintenance, emergency dispatch, capital projects — same crew, same PMs, same number.</p>
+    <div class="cta-row">
+      <a href="contact.html" class="btn-pill is-orange">
+        <span class="label"><span>Request a free quote</span><span>Request a free quote</span></span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="tel:+14694670970" class="btn-pill is-phone">
+        <span class="label"><span>(469) 467-0970</span><span>(469) 467-0970</span></span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile menu sheet -->
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet-panel">
+    <button class="sheet-close" id="menu-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <span class="time">
+      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span class="clock-time">--:--</span> in Dallas
+    </span>
+    <nav>
+      <a href="commercial.html">Commercial</a>
+      <a href="residential.html">Residential</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn-pill is-orange">
+      <span class="label"><span>Start a project</span><span>Start a project</span></span>
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     01 — MAINTENANCE
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="maintenance" class="section-block" data-screen-label="02 Maintenance">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">1</span>
+      <span class="badge-pill">General maintenance</span>
+    </div>
+    <div class="two-col" style="margin-bottom: 48px;">
+      <h2>The long tail of work orders, handled.</h2>
+      <p style="margin: 0;">Drywall, doors, signage, board-up, fixture installs. Licensed and insured handymen on call around the clock — for the routine work and the 2am calls both.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap">
+        <span class="cap-num">Interior</span>
+        <h3>Drywall, doors, hardware</h3>
+        <p>From a single patched wall to a full punch list across multiple units.</p>
+        <ul><li>Drywall &amp; patch</li><li>Doors &amp; frames</li><li>Locksets &amp; hardware</li><li>Trim &amp; baseboard</li></ul>
+      </div>
+      <div class="cap">
+        <span class="cap-num">Exterior</span>
+        <h3>Signage, board-up, emergency</h3>
+        <p>Storm damage, break-in board-up, signage installs — answered same day.</p>
+        <ul><li>Emergency board-up</li><li>Sign installation</li><li>Fence &amp; gate</li><li>Property cleanup</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     02 — HVAC
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="hvac" class="section-block alt" data-screen-label="03 HVAC">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">2</span>
+      <span class="badge-pill" style="border-color: var(--ink-300);">HVAC</span>
+    </div>
+    <div class="two-col" style="margin-bottom: 48px;">
+      <h2>Comfort is a<br>maintenance program.</h2>
+      <p style="margin: 0;">Quarterly PM programs keep your equipment alive longer; in-house techs handle replacements when it's time. We track every unit by site and serial.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap">
+        <span class="cap-num">Preventative</span>
+        <h3>Scheduled maintenance</h3>
+        <p>Quarterly or monthly PM visits with photo-documented checklists.</p>
+        <ul><li>Filter changes</li><li>Coil cleaning</li><li>Refrigerant checks</li><li>Drainage &amp; pan flush</li></ul>
+      </div>
+      <div class="cap">
+        <span class="cap-num">Service</span>
+        <h3>Repair &amp; replacement</h3>
+        <p>Diagnostics, parts, and full system change-outs — RTU through split.</p>
+        <ul><li>Compressor repair</li><li>Thermostat &amp; controls</li><li>System change-out</li><li>Ducting</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     03 — ELECTRICAL
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="electrical" class="section-block" data-screen-label="04 Electrical">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">3</span>
+      <span class="badge-pill">Electrical</span>
+    </div>
+    <div class="two-col" style="margin-bottom: 48px;">
+      <h2>Licensed electricians,<br>not Tuesday handymen.</h2>
+      <p style="margin: 0;">Fixture work, signage circuits, panel upgrades — performed by licensed Texas master electricians on our W-2 payroll. No sub-contracted gray area.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap">
+        <span class="cap-num">Lighting</span>
+        <h3>Interior &amp; exterior lighting</h3>
+        <p>Retrofit, replacement, and full installs across single locations or portfolios.</p>
+        <ul><li>LED retrofits</li><li>Parking lot &amp; pole</li><li>Sign &amp; channel letters</li><li>Emergency &amp; egress</li></ul>
+      </div>
+      <div class="cap">
+        <span class="cap-num">Service</span>
+        <h3>Outlets, panels, diagnostics</h3>
+        <p>Tracing intermittent issues, panel work, and code-compliant repairs.</p>
+        <ul><li>Outlets &amp; wiring</li><li>Panel upgrades</li><li>Circuit additions</li><li>Troubleshooting</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     04 — PLUMBING
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="plumbing" class="section-block alt" data-screen-label="05 Plumbing">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">4</span>
+      <span class="badge-pill" style="border-color: var(--ink-300);">Plumbing</span>
+    </div>
+    <div class="two-col" style="margin-bottom: 48px;">
+      <h2>The commercial plumbing<br>nobody else wants.</h2>
+      <p style="margin: 0;">Restroom and back-of-house plumbing across restaurants, multi-family, and retail. We carry the parts and the schedule flexibility to fix it on the first visit.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap">
+        <span class="cap-num">Restroom</span>
+        <h3>Fixtures &amp; supply</h3>
+        <p>Toilets, sinks, faucets, flush valves — repair and replacement.</p>
+        <ul><li>Toilet &amp; urinal repair</li><li>Faucet replacement</li><li>Flush valve service</li><li>Backflow testing</li></ul>
+      </div>
+      <div class="cap">
+        <span class="cap-num">Mechanical</span>
+        <h3>Water heaters &amp; drains</h3>
+        <p>Tankless and commercial tank service, drain clearing, leak repair.</p>
+        <ul><li>Water heater service</li><li>Drain clearing</li><li>Leak detection</li><li>Pipe repair</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     05 — RENOVATION
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="renovation" class="section-block" data-screen-label="06 Renovation">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">5</span>
+      <span class="badge-pill">Renovation &amp; build-outs</span>
+    </div>
+    <div class="two-col" style="margin-bottom: 48px;">
+      <h2>Refreshes and full TI<br>on commercial timelines.</h2>
+      <p style="margin: 0;">Tenant improvements, store refreshes, and full build-outs. Project-managed from scope through punch list, with shared status docs so your asset manager isn't chasing updates.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap">
+        <span class="cap-num">Finishes</span>
+        <h3>Flooring, tile, paint</h3>
+        <p>Site-wide refreshes that look the same across every location.</p>
+        <ul><li>LVT &amp; carpet tile</li><li>Tile &amp; grout</li><li>Commercial paint</li><li>Ceiling &amp; lighting</li></ul>
+      </div>
+      <div class="cap">
+        <span class="cap-num">Build-outs</span>
+        <h3>Tenant improvements</h3>
+        <p>From whitebox to occupancy on lease deadlines, with permitting in-scope.</p>
+        <ul><li>Framing &amp; demolition</li><li>Permits &amp; inspections</li><li>Trade coordination</li><li>Punch &amp; closeout</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     06 — PROCESS
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section-block alt" data-screen-label="07 Process">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">6</span>
+      <span class="badge-pill" style="border-color: var(--ink-300);">Project management</span>
+    </div>
+    <div class="two-col" style="margin-bottom: 48px;">
+      <h2>How a project<br>actually runs with us.</h2>
+      <p style="margin: 0;">Same process for a single repair as for a multi-site renovation — the docs scale, the steps don't. Here's the rhythm.</p>
+    </div>
+    <div class="process">
+      <div class="step">
+        <span class="num">Step 01</span>
+        <h4>Walk &amp; scope</h4>
+        <p>We visit the site, document conditions with photos, and write a scope you can compare line-by-line.</p>
+      </div>
+      <div class="step">
+        <span class="num">Step 02</span>
+        <h4>Quote &amp; schedule</h4>
+        <p>Fixed-price quote within one business day, with a calendar slot held while you decide.</p>
+      </div>
+      <div class="step">
+        <span class="num">Step 03</span>
+        <h4>Execute</h4>
+        <p>One PM owns the job. Daily updates if multi-day; photo evidence at every milestone.</p>
+      </div>
+      <div class="step">
+        <span class="num">Step 04</span>
+        <h4>Closeout</h4>
+        <p>Punch list, sign-off, and a single line-item invoice — no surprise add-ons.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTACT CTA
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section-contact" data-screen-label="08 CTA">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">7</span>
+      <span class="badge-pill" style="border-color: var(--ink-300);">Ready to consolidate</span>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <h2 class="h2" style="margin-bottom: 0;">One vendor for<br>the whole portfolio.</h2>
+        <p class="lede">Tell us about your sites — number, type, current vendors. We'll come back with a transition plan that doesn't disrupt your operations.</p>
+        <div class="contact-quick">
+          <a href="contact.html" class="btn-pill is-orange">
+            <span class="label"><span>Request a quote</span><span>Request a quote</span></span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="tel:+14694670970" class="btn-pill is-phone">
+            <span class="label"><span>(469) 467-0970</span><span>(469) 467-0970</span></span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          </a>
+        </div>
+        <div class="contact-tags">
+          <span>Licensed in TX</span>
+          <span>Insured to $2M</span>
+          <span>W-2 in-house crews</span>
+        </div>
+      </div>
+      <div>
+        <div class="ph has-img" style="aspect-ratio: 4/3; border-radius: 16px; overflow: hidden;">
+          <picture>
+            <source srcset="assets/commercial-crew.webp" type="image/webp">
+            <img src="assets/commercial-crew.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Pier 60 crew at a multi-site commercial renovation">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand-row">
+          <span class="logo"><img src="assets/logo-white.svg" alt="Pier 60 Construction"></span>
+          <span class="name">Pier 60 USA<small>Facility services since 2014</small></span>
+        </div>
+        <p>Commercial facility maintenance, renovation, HVAC, electrical, and plumbing — built around one call, one vendor, one invoice.</p>
+        <div class="foot-licenses">
+          <span>TX licensed</span><span>$2M GL</span><span>OSHA-trained</span>
+        </div>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="commercial.html">Commercial</a></li>
+          <li><a href="residential.html">Residential</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#maintenance">Maintenance</a></li>
+          <li><a href="#hvac">HVAC</a></li>
+          <li><a href="#electrical">Electrical</a></li>
+          <li><a href="#plumbing">Plumbing</a></li>
+          <li><a href="#renovation">Renovation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+14694670970" class="tel">(469) 467-0970</a></li>
+          <li><a href="mailto:info@pier60usa.com">info@pier60usa.com</a></li>
+          <li>
+            <address class="foot-address">
+              <strong>Pier 60 USA</strong>
+              7000 Independence Pkwy<br>
+              Suite 156-323<br>
+              Plano, TX 75025
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="year">2026</span> Pier 60 USA. All rights reserved.</span>
+      <span class="tel">pier60usa.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function updateClock() {
+    var t = new Date().toLocaleString('en-US', { timeZone: 'America/Chicago', hour12: false, hour: '2-digit', minute: '2-digit' });
+    document.querySelectorAll('.clock-time').forEach(function(el){ el.textContent = t; });
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+  document.querySelectorAll('.year').forEach(function(e){ e.textContent = new Date().getFullYear(); });
+
+  var sheet = document.getElementById('sheet');
+  document.getElementById('menu-open').addEventListener('click', function(){ sheet.classList.add('open'); sheet.setAttribute('aria-hidden','false'); });
+  document.getElementById('menu-close').addEventListener('click', function(){ sheet.classList.remove('open'); sheet.setAttribute('aria-hidden','true'); });
+  sheet.addEventListener('click', function(e){ if (e.target === sheet) { sheet.classList.remove('open'); sheet.setAttribute('aria-hidden','true'); } });
+</script>
+
+</body>
+</html>

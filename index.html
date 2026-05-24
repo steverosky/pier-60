@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pier 60 USA — Commercial Facility Maintenance &amp; Renovation, Dallas TX</title>
+  <meta name="description" content="Pier 60 USA delivers commercial facility maintenance, renovation, HVAC, electrical, and plumbing services across Texas. Licensed, insured, 24/7 emergency response. Based in Dallas, TX.">
+  <link rel="stylesheet" href="styles_v2.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero has-video" data-screen-label="01 Hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto"
+         poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+    <source src="assets/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="nav-pill">
+      <div class="nav-left">
+        <a href="index.html" class="logo" aria-label="Pier 60 USA — Home"><img src="assets/logo-navy.svg" alt="Pier 60"></a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="commercial.html">Commercial</a>
+          <a href="residential.html">Residential</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-meta">
+          <span class="availability">Booking work for Q1 2026</span>
+          <span class="clock">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span id="clock-time">--:--</span> in Dallas
+          </span>
+        </div>
+        <a href="contact.html" class="btn-pill" aria-label="Request a quote">
+          <span class="label"><span>Request a quote</span><span>Request a quote</span></span>
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <button class="menu-btn" id="menu-open" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="hero-spacer"></div>
+
+  <!-- Hero content -->
+  <div class="hero-content">
+    <p class="eyebrow-sm">Pier 60 USA — Dallas, TX</p>
+    <h1 class="h1">
+      Whatever it takes<br class="br-sm"><span class="sp-mobile"> </span>to make it right —<br class="br-sm"><span class="sp-mobile"> </span>across every facility you run.
+    </h1>
+
+    <div class="hero-cta-row">
+      <a href="contact.html" class="btn-pill is-orange" aria-label="Request a quote">
+        <span class="label"><span>Request a quote</span><span>Request a quote</span></span>
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="tel:+14694670970" class="btn-pill is-phone" aria-label="Call (469) 467-0970">
+        <span class="label"><span>(469) 467-0970</span><span>(469) 467-0970</span></span>
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile menu sheet -->
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet-panel">
+    <button class="sheet-close" id="menu-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <span class="time">
+      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span id="clock-time-m">--:--</span> in Dallas
+    </span>
+    <nav>
+      <a href="commercial.html">Commercial</a>
+      <a href="residential.html">Residential</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn-pill is-orange">
+      <span class="label"><span>Start a project</span><span>Start a project</span></span>
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 2 — INTRODUCING (About teaser)
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section-about intro" data-screen-label="02 Introducing">
+  <div class="wrap">
+    <div class="intro-grid">
+
+      <!-- ── Left: editorial copy ── -->
+      <div class="intro-copy">
+        <div class="badge-row" data-reveal style="--d:0">
+          <span class="badge-num">1</span>
+          <span class="badge-pill">Introducing Pier 60</span>
+        </div>
+
+        <h2 class="intro-h" data-reveal style="--d:1">One partner for every<br><span class="u">building you run.</span></h2>
+
+        <p class="intro-lead" data-reveal style="--d:2">For a decade, Texas property managers have handed Pier 60 the work nobody else wants to coordinate — the Sunday-night leak, the multi-site refresh on a deadline, the punch list before a lease signs. In-house crews, live dispatch, one point of contact.</p>
+
+        <ul class="intro-ledger">
+          <li data-reveal style="--d:3">
+            <span class="lx">01</span>
+            <div><h3>One call</h3><p>Maintenance, HVAC, electrical, plumbing, and build-outs — all routed from a single number.</p></div>
+          </li>
+          <li data-reveal style="--d:4">
+            <span class="lx">02</span>
+            <div><h3>One vendor</h3><p>W-2 technicians and licensed trades, kept in-house. No subcontractor roulette.</p></div>
+          </li>
+          <li data-reveal style="--d:5">
+            <span class="lx">03</span>
+            <div><h3>One invoice</h3><p>Every trade, every site — reconciled onto one clean monthly statement.</p></div>
+          </li>
+        </ul>
+
+        <a href="about.html" class="btn-pill is-orange intro-cta" data-reveal style="--d:6">
+          <span class="label"><span>More about Pier 60</span><span>More about Pier 60</span></span>
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- ── Right: layered imagery ── -->
+      <div class="intro-media">
+        <div class="intro-dots" aria-hidden="true"></div>
+
+        <figure class="intro-img intro-img--main" data-reveal style="--d:1">
+          <picture>
+            <source srcset="assets/about-multifamily.webp" type="image/webp">
+            <img src="assets/about-multifamily.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Multi-family residential building serviced by Pier 60">
+          </picture>
+        </figure>
+
+        <figure class="intro-img intro-img--inset" data-reveal style="--d:3">
+          <picture>
+            <source srcset="assets/about-crew.webp" type="image/webp">
+            <img src="assets/about-crew.jpg" width="880" height="696" loading="lazy" decoding="async" alt="Pier 60 maintenance crew working on-site in Plano, TX">
+          </picture>
+        </figure>
+
+        <div class="intro-stat" data-reveal="fade" style="--d:4">
+          <span class="intro-stat-n">10<sup>+</sup></span>
+          <span class="intro-stat-l">years across<br>Texas</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 3 — STATS STRIP
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="stats-strip" data-screen-label="03 Stats">
+  <div class="wrap">
+    <div class="stat-cell">
+      <span class="n">10<sup>+</sup></span>
+      <span class="lbl">Years operating across Texas</span>
+    </div>
+    <div class="stat-cell">
+      <span class="n">24/7</span>
+      <span class="lbl">Emergency facility response</span>
+    </div>
+    <div class="stat-cell">
+      <span class="n">90<sup>min</sup></span>
+      <span class="lbl">Average on-site emergency response</span>
+    </div>
+    <div class="stat-cell">
+      <span class="n">$2M</span>
+      <span class="lbl">General liability — licensed in TX</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 4 — FEATURED WORK / PROJECTS
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section-work" data-screen-label="04 Projects">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">2</span>
+      <span class="badge-pill" style="border-color: var(--ink-300);">Featured client work</span>
+    </div>
+
+    <h2 class="h2-xl">Our projects</h2>
+
+    <div class="cards">
+      <a href="commercial.html" class="card">
+        <div class="media">
+          <div class="ph-fill has-img">
+            <picture>
+              <source srcset="assets/work-interior.webp" type="image/webp">
+              <img src="assets/work-interior.jpg" width="900" height="673" loading="lazy" decoding="async" alt="Refreshed multi-family interior — Lakeside Commons, Plano, TX">
+            </picture>
+          </div>
+          <div class="card-cta">
+            <svg class="ico-link" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+            <span class="label">Learn more</span>
+          </div>
+        </div>
+        <p class="desc">Twelve-day turn on 38 multi-family units in Plano — paint, flooring, fixtures, punch list.</p>
+        <p class="title">Lakeside Commons · Plano, TX</p>
+      </a>
+
+      <a href="commercial.html" class="card alt">
+        <div class="media">
+          <div class="ph-fill has-img">
+            <picture>
+              <source srcset="assets/work-hvac.webp" type="image/webp">
+              <img src="assets/work-hvac.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Technician servicing a rooftop HVAC unit — Greenbelt QSR portfolio rollout">
+            </picture>
+          </div>
+          <div class="card-cta">
+            <svg class="ico-link" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            <span class="label">View case study</span>
+          </div>
+        </div>
+        <p class="desc">HVAC change-outs and signage refresh across 14 quick-service locations on a 10-week rolling schedule.</p>
+        <p class="title">Greenbelt QSR Portfolio · Texas-wide</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 5 — SERVICES LIST
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section-services" data-screen-label="05 Services">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">3</span>
+      <span class="badge-pill">What we do</span>
+    </div>
+
+    <h2 class="h2">Six disciplines,<br>one in-house team.</h2>
+
+    <div class="services-list">
+      <div class="svc-row">
+        <span class="num">01</span>
+        <h3>General maintenance</h3>
+        <div>
+          <p>Around-the-clock handymen for the long tail of work orders that keep a facility running.</p>
+          <ul class="tags">
+            <li>Drywall repair</li><li>Fixtures</li><li>Doors &amp; signage</li><li>Emergency board-up</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <span class="num">02</span>
+        <h3>HVAC service &amp; replacement</h3>
+        <div>
+          <p>Preventative programs and full system change-outs that keep comfort consistent and costs predictable.</p>
+          <ul class="tags">
+            <li>Preventative maintenance</li><li>Filters &amp; coils</li><li>Change-outs</li><li>Refrigerant compliance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <span class="num">03</span>
+        <h3>Electrical</h3>
+        <div>
+          <p>In-house licensed electricians for fixtures, wiring, signage, and the diagnostics nobody else wants.</p>
+          <ul class="tags">
+            <li>Fixture replacement</li><li>Outlets &amp; wiring</li><li>Lighting &amp; signage</li><li>Panel work</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <span class="num">04</span>
+        <h3>Plumbing</h3>
+        <div>
+          <p>Commercial-grade plumbing that keeps restrooms, kitchens, and back-of-house running leak-free.</p>
+          <ul class="tags">
+            <li>Water heaters</li><li>Clog removal</li><li>Restroom repair</li><li>Backflow testing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <span class="num">05</span>
+        <h3>Renovation &amp; build-outs</h3>
+        <div>
+          <p>Tenant improvements, refreshes, and full build-outs — finished on the deadlines your leases demand.</p>
+          <ul class="tags">
+            <li>Flooring &amp; tile</li><li>Paint &amp; finishes</li><li>Build-outs</li><li>Punch list</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <span class="num">06</span>
+        <h3>Project management</h3>
+        <div>
+          <p>Scope, schedule, budget. You get a single PM and a shared status doc — not a thread of contractor emails.</p>
+          <ul class="tags">
+            <li>Scoping</li><li>Scheduling</li><li>Budget tracking</li><li>Closeout</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 6 — CONTACT
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section-contact" id="quote" data-screen-label="06 Contact">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge-num">4</span>
+      <span class="badge-pill" style="border-color: var(--ink-300);">Get a free quote</span>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <h2 class="h2" style="margin-bottom: 0;">Tell us about the property.<br>We'll come back within one business day.</h2>
+        <p class="lede">Most quotes go out within 24 hours. Emergency calls don't wait — pick up the phone and dispatch will route a technician on the same call.</p>
+
+        <div class="contact-quick">
+          <a href="tel:+14694670970" class="btn-pill is-orange" aria-label="Call dispatch">
+            <span class="label"><span>(469) 467-0970</span><span>(469) 467-0970</span></span>
+            <span class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            </span>
+          </a>
+          <a href="mailto:info@pier60usa.com" class="btn-pill">
+            <span class="label"><span>info@pier60usa.com</span><span>info@pier60usa.com</span></span>
+            <span class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-tags">
+          <span>Licensed in TX</span>
+          <span>Insured to $2M</span>
+          <span>W-2 in-house crews</span>
+        </div>
+      </div>
+
+      <form class="form-card" onsubmit="event.preventDefault(); var b=this.querySelector('button .label'); b.innerHTML='<span>Thanks — we will be in touch.</span><span>Thanks — we will be in touch.</span>'; this.querySelector('button').disabled=true;">
+        <h3>Request a quote</h3>
+        <p class="hint">Required fields marked with an asterisk.</p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">Name *</label>
+            <input id="f-name" type="text" required placeholder="Pat Wilson">
+          </div>
+          <div class="field">
+            <label for="f-company">Company</label>
+            <input id="f-company" type="text" placeholder="Acme Property Group">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-email">Email *</label>
+            <input id="f-email" type="email" required placeholder="pat@acme.com">
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" type="tel" placeholder="(555) 555-0123">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-service">Type of work *</label>
+          <select id="f-service" required>
+            <option value="">Select one…</option>
+            <option>General maintenance</option>
+            <option>HVAC</option>
+            <option>Electrical</option>
+            <option>Plumbing</option>
+            <option>Renovation / build-out</option>
+            <option>Project management</option>
+            <option>Emergency — 24/7 dispatch</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-notes">Tell us about the job</label>
+          <textarea id="f-notes" placeholder="Property type, location, timeline, anything urgent…"></textarea>
+        </div>
+
+        <button type="submit" class="btn-pill is-orange">
+          <span class="label"><span>Send request</span><span>Send request</span></span>
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand-row">
+          <span class="logo"><img src="assets/logo-white.svg" alt="Pier 60 Construction"></span>
+          <span class="name">Pier 60 USA<small>Facility services since 2014</small></span>
+        </div>
+        <p>Commercial facility maintenance, renovation, HVAC, electrical, and plumbing — built around one call, one vendor, one invoice.</p>
+        <div class="foot-licenses">
+          <span>TX licensed</span>
+          <span>$2M GL</span>
+          <span>OSHA-trained</span>
+        </div>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="commercial.html">Commercial</a></li>
+          <li><a href="residential.html">Residential</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="commercial.html#maintenance">Maintenance</a></li>
+          <li><a href="commercial.html#hvac">HVAC</a></li>
+          <li><a href="commercial.html#electrical">Electrical</a></li>
+          <li><a href="commercial.html#plumbing">Plumbing</a></li>
+          <li><a href="commercial.html#renovation">Renovation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+14694670970" class="tel">(469) 467-0970</a></li>
+          <li><a href="mailto:info@pier60usa.com">info@pier60usa.com</a></li>
+          <li>
+            <address class="foot-address">
+              <strong>Pier 60 USA</strong>
+              7000 Independence Pkwy<br>
+              Suite 156-323<br>
+              Plano, TX 75025
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Pier 60 USA. All rights reserved.</span>
+      <span class="tel">pier60usa.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Live clock — Dallas (America/Chicago)
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function updateClock() {
+    var t = new Date().toLocaleString('en-US', {
+      timeZone: 'America/Chicago',
+      hour12: false,
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+    document.querySelectorAll('#clock-time, #clock-time-m').forEach(function(el){ el.textContent = t; });
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var sheet = document.getElementById('sheet');
+  document.getElementById('menu-open').addEventListener('click', function(){
+    sheet.classList.add('open');
+    sheet.setAttribute('aria-hidden', 'false');
+  });
+  document.getElementById('menu-close').addEventListener('click', function(){
+    sheet.classList.remove('open');
+    sheet.setAttribute('aria-hidden', 'true');
+  });
+  sheet.addEventListener('click', function(e){
+    if (e.target === sheet) {
+      sheet.classList.remove('open');
+      sheet.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  // Orchestrated reveal for the "Introducing Pier 60" section
+  (function () {
+    var els = document.querySelectorAll('.intro [data-reveal]');
+    if (!els.length) return;
+    document.documentElement.classList.add('reveal-ready');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

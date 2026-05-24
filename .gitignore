@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs & env
+*.log
+.env
+.env.*
+
+# Build output
+dist/
+build/
+
+# Scratch / diagnostic files
+_*.html
+*.tmp
