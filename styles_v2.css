@@ -850,6 +850,75 @@ button { font: inherit; cursor: pointer; }
   background: var(--white);
 }
 .field textarea { resize: vertical; min-height: 96px; }
+
+/* ── Custom animated checkbox ──────────────────────────────────── */
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.checkbox .text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-500);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.checkbox input {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: 0; border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.checkbox .box {
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  margin-top: 1px;
+  border: 2px solid var(--ink-300);
+  border-radius: 6px;
+  background: var(--white);
+  display: grid;
+  place-items: center;
+  transition: background .25s var(--ease), border-color .25s var(--ease), transform .2s var(--ease);
+}
+.checkbox .box svg {
+  width: 14px; height: 14px;
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  transition: stroke-dashoffset .3s var(--ease) .06s;
+}
+.checkbox:hover .box { border-color: var(--orange); }
+.checkbox input:checked + .box {
+  background: var(--orange);
+  border-color: var(--orange);
+  animation: cb-pop .28s var(--ease);
+}
+.checkbox input:checked + .box svg { stroke-dashoffset: 0; }
+.checkbox input:focus-visible + .box {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+@keyframes cb-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(0.82); }
+  100% { transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .checkbox .box, .checkbox .box svg { transition: none; }
+  .checkbox input:checked + .box { animation: none; }
+}
+
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .form-card .btn-pill { width: 100%; justify-content: space-between; margin-top: 8px; padding-left: 22px; }
 

@@ -40,7 +40,7 @@
             <span id="clock-time">--:--</span> in Dallas
           </span>
         </div>
-        <a href="contact.html" class="btn-pill" aria-label="Request a quote">
+        <a href="#quote" class="btn-pill" aria-label="Request a quote">
           <span class="label"><span>Request a quote</span><span>Request a quote</span></span>
           <span class="ico">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -64,7 +64,7 @@
     </h1>
 
     <div class="hero-cta-row">
-      <a href="contact.html" class="btn-pill is-orange" aria-label="Request a quote">
+      <a href="#quote" class="btn-pill is-orange" aria-label="Request a quote">
         <span class="label"><span>Request a quote</span><span>Request a quote</span></span>
         <span class="ico">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -394,23 +394,50 @@
           </div>
         </div>
 
+        <div class="field-row">
+          <div class="field">
+            <label for="f-type">Property type *</label>
+            <select id="f-type" required>
+              <option value="">Select one…</option>
+              <option>Commercial — single site</option>
+              <option>Commercial — multi-site portfolio</option>
+              <option>Multi-family / apartments</option>
+              <option>Residential — single home</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-service">Type of work *</label>
+            <select id="f-service" required>
+              <option value="">Select one…</option>
+              <option>General maintenance</option>
+              <option>HVAC</option>
+              <option>Electrical</option>
+              <option>Plumbing</option>
+              <option>Renovation / build-out</option>
+              <option>Kitchen / bath remodel</option>
+              <option>Project management</option>
+              <option>Emergency — 24/7 dispatch</option>
+            </select>
+          </div>
+        </div>
+
         <div class="field">
-          <label for="f-service">Type of work *</label>
-          <select id="f-service" required>
-            <option value="">Select one…</option>
-            <option>General maintenance</option>
-            <option>HVAC</option>
-            <option>Electrical</option>
-            <option>Plumbing</option>
-            <option>Renovation / build-out</option>
-            <option>Project management</option>
-            <option>Emergency — 24/7 dispatch</option>
-          </select>
+          <label for="f-city">City / service area *</label>
+          <input id="f-city" type="text" required placeholder="Dallas, TX">
         </div>
 
         <div class="field">
           <label for="f-notes">Tell us about the job</label>
-          <textarea id="f-notes" placeholder="Property type, location, timeline, anything urgent…"></textarea>
+          <textarea id="f-notes" placeholder="Scope, timeline, anything urgent…"></textarea>
+        </div>
+
+        <div class="field" style="margin-bottom: 8px;">
+          <label class="checkbox">
+            <input type="checkbox">
+            <span class="box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg></span>
+            <span class="text">This is an emergency — please call me first before email.</span>
+          </label>
         </div>
 
         <button type="submit" class="btn-pill is-orange">

@@ -29,3 +29,17 @@ build/
 # Scratch / diagnostic files
 _*.html
 *.tmp
+
+# Dev QA screenshots
+screenshots/
+
+# Tool-generated artifacts
+.thumbnail
+
+# AI / agent tooling (not part of the site)
+.agents/
+skills-lock.json
+
+# Dev-only "Tweaks panel" (not referenced by any page)
+site-tweaks.jsx
+tweaks-panel.jsx
